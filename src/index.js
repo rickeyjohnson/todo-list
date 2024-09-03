@@ -1,6 +1,6 @@
 import './modules/Dashboard'
 import './modules/Project'
 import './modules/Todo'
-import './views/DOMController'
+import './views/View'
 
 import './style.css'
