@@ -1,12 +1,12 @@
 import { format } from "date-fns"
 
 const todo = (title, description, priority, project, status) => {
-    let title = this.title
-    let description = this.description
+    this.title = title
+    this.description = description
     // TODO: let dueDate = new Date()
-    let priority = this.priority
-    let project = this.project
-    let status = this.status
+    this.priority = priority
+    this.project = project
+    this.status = status
 
     return {title, description, priority, project, status}
 }
