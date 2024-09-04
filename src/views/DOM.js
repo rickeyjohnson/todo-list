@@ -1,0 +1,5 @@
+// imports
+
+export function initializeDOM() {
+    
+}
