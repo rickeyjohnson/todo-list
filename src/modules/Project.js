@@ -3,7 +3,7 @@ import { Todo } from './Todo'
 export class Project {
     todos = []
 
-    constructor(title) {
+    constructor(title="deafult") {
         this.title = title
     }
 
