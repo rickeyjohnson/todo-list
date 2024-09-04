@@ -1,7 +1,6 @@
 export class Todo {
-    constructor (title, description, project, completed = false) {
+    constructor (title, project, completed = false) {
         this.title = title
-        this.description = description
         this.project = project
         this.completed = completed
     }
@@ -14,7 +13,7 @@ export class Todo {
         this.description = nDescription
     }
 
-    editCompleted(nCompleted) {
-        this.completed = nCompleted
+    toggleCompleted() {
+        this.completed ? this.completed = false : this.completed = true
     }
 }
