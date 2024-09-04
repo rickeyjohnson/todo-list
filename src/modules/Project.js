@@ -1,4 +1,4 @@
-import './Todo'
+import { Todo } from './Todo'
 
 export class Project {
     todos = []
