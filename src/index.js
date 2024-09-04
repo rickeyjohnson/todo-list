@@ -1,6 +1,5 @@
 import { Todo } from './modules/Todo'
 import { Project } from './modules/Project'
+import { initializeDOM } from './views/DOM'
 
-let todo1 = new Todo("the odin project", "internship", false)
-
-console.log(todo1.title)
+import './css/style.css'
