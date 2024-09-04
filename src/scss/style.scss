@@ -1,8 +1,46 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: pink;
+    @include flexCenter();
+    flex-direction: column;
+    height: 100vh;
+}
+
+#project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 4rem;
+
+    &:hover {
+        
+    }
+}
+
+.label {
+    @include flexCenter();
+}
+
+#main {
+    flex: 1;
+    
+    h1 {
+        @include flexCenter();
+    }
 }

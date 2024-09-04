@@ -6,18 +6,24 @@
     <title>Todo List</title>
 </head>
 <body>
-    <h1>Todo</h1>
-    <div id="projects-container">
-        <!-- Default project "card" -->
-        <div id="default" class="card">
-            <div class="project-title">default</div>
-            <div class="project description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus, quaerat, pariatur velit eos quo sint iusto vero ipsum, voluptates ratione laborum! Consequatur vero quis quibusdam dolores, unde eum aut!</div>
+    <div id="main">
+        <h1>Todo</h1>
+        <div id="project-container">
+            <div id="projects-cards-container">
+                <!-- Default project "card" -->
+                <div id="default" class="card">
+                    <div class="label">default</div>
+                </div>
+        
+                <!-- Project "cards" will go in here -->
+            </div>
+            <div id="add-btn" class="card">
+                <div class="label">+</div>
+            </div>
         </div>
-
-        <!-- Project "cards" will go in here -->
     </div>
-    <div id="add-btn-container">
-        <button id="add-btn">+</button>
+    <div id="footer">
+        Rickey Johnson | The Odin Project
     </div>
 </body>
 </html>
