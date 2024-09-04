@@ -12,7 +12,7 @@ export class Project {
     }
 
     removeTodo(todo) {
-        let index = this.findIndex((element) => { element === todo })
+        let index = this.todos.indexOf(todo)
         this.todos.splice(index, 1)
     }
 }
