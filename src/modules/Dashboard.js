@@ -4,8 +4,8 @@ import { Project } from './Project'
 export class Dashboard {
     projects = []
 
-    addProject(project) {
-        this.projects.push(new Project("p"))
+    addProject() {
+        this.projects.push(new Project(""))
     }
 
     removeProject(project) {

@@ -31,6 +31,12 @@ body {
   flex-direction: column;
   gap: 0.625rem;
 }
+#content .project.card.add-btn:hover {
+  cursor: pointer;
+}
+#content .project.card.add-btn:active {
+  background-color: #e4e4e4;
+}
 
 #header,
 #footer {

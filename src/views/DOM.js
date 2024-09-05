@@ -6,27 +6,21 @@ let dashboard = new Dashboard()
 let project = new Project()
 
 export function initializeDOM() {
-    // const addButton = document.querySelector("#add-btn")
-    // addButton.addEventListener("click", () => {
-    //     alertHi()
-    // })
+    const addButton = document.querySelector(".add-btn")
+    addButton.addEventListener("click", () => {
+        // add project
+            // add project to dashboard
+                // display projectForm UI
+                // get data from form
+                // insert it in new project for dashboard
+            // add projectUI to dashboardUI
+            // save product to local storage
+    })
 
-    // show projects and todos on the dashboard
-
-    // if add project is pressed, create new project
-        // project creation form displays
-        // dashboard.projects updated
-
-    // if add todo button is pressed inside a particular project, create new todo
-        // todo creation form displays
-        // project.todos is updated
-
-    function displayProjects() {
-        const projectContainer = createElementWithIdAndClass("div", "", "project card")
-    }
-
-    function displayTodo() {
-        // code
+    function addProject() {
+        // display project form creation
+        // add project to dashboard (internally)
+        // display project
     }
 
     function saveProject() {
@@ -36,14 +30,4 @@ export function initializeDOM() {
             // no we cant use local storage!
         }
     }
-
-    function deleteProject() {
-        // code
-    }
-
-    function createProject() {
-        // display project form creation
-        // display project
-    }
-
 }

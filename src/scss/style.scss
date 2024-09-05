@@ -40,6 +40,16 @@ body {
         @include flexCenter();
         flex-direction: column;
         gap: pxToREM(10);
+
+        &.add-btn {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: #e4e4e4;
+            }
+        }
     }
 }
 
