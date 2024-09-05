@@ -22,7 +22,7 @@ export function initializeDOM() {
         // project.todos is updated
 
     function displayProjects() {
-        const projectContainer = createElementWithIdAndClass("div", "project-container", "project card")
+        const projectContainer = createElementWithIdAndClass("div", "", "project card")
     }
 
     function displayTodo() {
@@ -39,6 +39,11 @@ export function initializeDOM() {
 
     function deleteProject() {
         // code
+    }
+
+    function createProject() {
+        // display project form creation
+        // display project
     }
 
 }

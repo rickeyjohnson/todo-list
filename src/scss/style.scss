@@ -1,3 +1,56 @@
+$project-card-background: #f2f2f2;
+$todo-item-card-background: #e4e4e4;
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@function pxToREM($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}
+
 html, body {
-    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flexCenter();
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-auto-rows: 100%;
+    overflow: scroll;
+    gap: pxToREM(10);
+
+    .project.card {
+        background-color: $project-card-background;
+        border-radius: 2rem;
+        @include flexCenter();
+        flex-direction: column;
+        gap: pxToREM(10);
+    }
+}
+
+#header, 
+#footer {
+    padding: 2rem;
+}
+
+.todos {
+    .todo {
+        background-color: $todo-item-card-background;
+        padding: 2rem;
+    }
 }
