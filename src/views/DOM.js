@@ -8,6 +8,9 @@ let project = new Project()
 export function initializeDOM() {
     const addButton = document.querySelector(".add-btn")
     addButton.addEventListener("click", () => {
+
+
+
         // add project
             // add project to dashboard
                 // display projectForm UI
@@ -21,6 +24,8 @@ export function initializeDOM() {
         // display project form creation
         // add project to dashboard (internally)
         // display project
+
+        
     }
 
     function saveProject() {
