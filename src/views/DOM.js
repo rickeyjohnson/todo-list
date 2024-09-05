@@ -1,6 +1,6 @@
 import { Dashboard } from '../modules/Dashboard'
 import { Project } from '../modules/Project'
-import { createElementWithIdAndClass } from '../js_components/helperFunctions'
+import { createElementWithIdAndClass, storageAvailable } from '../js_components/helperFunctions'
 
 let dashboard = new Dashboard()
 let project = new Project()
@@ -8,8 +8,7 @@ let project = new Project()
 export function initializeDOM() {
     // const addButton = document.querySelector("#add-btn")
     // addButton.addEventListener("click", () => {
-    //     dashboard.addProject()
-    //     alert("added")
+    //     alertHi()
     // })
 
     // show projects and todos on the dashboard
@@ -21,5 +20,21 @@ export function initializeDOM() {
     // if add todo button is pressed inside a particular project, create new todo
         // todo creation form displays
         // project.todos is updated
+
+    function displayProjects() {
+
+    }
+
+    function displayTodo() {
+
+    }
+
+    function saveProject() {
+        if (storageAvailable("localStorage")) {
+            // yay we can use local storage
+        } else {
+            // no we cant use local storage!
+        }
+    }
 
 }
