@@ -22,7 +22,7 @@ export function initializeDOM() {
         // project.todos is updated
 
     function displayProjects() {
-        createElementWithIdAndClass("div", "")
+        const projectContainer = createElementWithIdAndClass("div", "project-container", "project card")
     }
 
     function displayTodo() {
