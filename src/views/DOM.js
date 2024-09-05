@@ -22,11 +22,11 @@ export function initializeDOM() {
         // project.todos is updated
 
     function displayProjects() {
-
+        createElementWithIdAndClass("div", "")
     }
 
     function displayTodo() {
-
+        // code
     }
 
     function saveProject() {
@@ -35,6 +35,10 @@ export function initializeDOM() {
         } else {
             // no we cant use local storage!
         }
+    }
+
+    function deleteProject() {
+        // code
     }
 
 }
